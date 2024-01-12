@@ -98,7 +98,7 @@ CIPS policy application code and results
 - :page_facing_up: estimator.R: Proposed estimators computation
 - :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures
 - :file_folder: Rdata: Estimates of target causal estimands were stored.
-- :file_folder: D.4. Comparison with Park et al (2021): Comparison with
+- :file_folder: D.4. Comparison with [Park et al (2021)](https://arxiv.org/abs/2111.09932v1): Comparison with
   >- :page_facing_up: Preprocessing.R: Preprocessing raw data files to generate HHData.Rdata from "~/application/Data/senegal18.DTA"
   >- :page_facing_up: estimator.R: Proposed estimators computation
   >- :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures
@@ -113,35 +113,12 @@ TPB policy application code and results
 - :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures
 - :file_folder: result: Estimates of target causal estimands were stored.
 
+## References
+- [Barkley, B. G., Hudgens, M. G., Clemens, J. D., Ali, M. & Emch, M. E. (2020), ‘Causal
+inference from observational studies with clustered interference, with application to a
+cholera vaccine study’, The Annals of Applied Statistics 14(3), 1432–1448.](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-14/issue-3/Causal-inference-from-observational-studies-with-clustered-interference-with-application/10.1214/19-AOAS1314.full)
 
-- :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
-- :page_facing_up: estimand.R: Causal estimands approximation
-- :page_facing_up: estimator.R: Proposed estimators computation
-- :page_facing_up: readresult.R: Read and summarize simulation result
-- :page_facing_up: estimands.RDS: Target causal estimands
-- :file_folder: data: Estimates of target causal estimands were stored.
-
-
-
-## :file_folder: Code
-
-### :page_facing_up: Preprocessing.R
-- By running this R file, the DHS dataset is cleaned.
-- Preprocessed dataset will be saved as "Data/DHS/HHData.Rdata" and used in "Code/Estimation.R".
-
-### :page_facing_up: Estimator.R
-- R function for Nonparametric efficient sample splitting estimator under the Cluster Incremental Propensity Score policy.
-
-### :page_facing_up: Estimation.R
-- Requires "Code/Estimator.R" and "Data/DHS/HHData.Rdata".
-- Senegal DHS data is analyzed to estimate the causal estimands under the Cluster IPS policy.
-- The code will take a lot of time, so it is recommended to use parallel computing.
-- To parallelize, submit jobs in for(s in 1:S){...} separately.
-- Estimates and SE estimates will be saved at "Data/DHS/result.Rdata".
-
-### :page_facing_up: Visualization.R
-- Requires "Data/DHS/result.Rdata".
-- Causal estimands under the Cluster IPS policy estimation results are visualized.
-- Generated figures are saved under "Data/DHS/".
-
+- [Park, C., Chen, G., Yu, M. & Kang, H. (2021), ‘Optimal allocation of water and sanitation
+facilities to prevent communicable diarrheal diseases in Senegal under partial interference’,
+arXiv preprint arXiv:2004.08950 .](https://arxiv.org/abs/2111.09932v1)https://arxiv.org/abs/2111.09932v1
 
