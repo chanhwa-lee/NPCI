@@ -1,0 +1,69 @@
+WARNING: ignoring environment value of R_HOME
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: splines
+Loading required package: foreach
+Loaded gam 1.20.2
+
+Super Learner
+Version: 2.0-28
+Package created on 2021-05-04
+
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: Matrix
+Loaded glmnet 4.1-7
+Loading required package: Formula
+Loading required package: plotmo
+Loading required package: plotrix
+Loading required package: TeachingDemos
+Loaded gbm 2.1.8.1
+
+Attaching package: ‘xgboost’
+
+The following object is masked from ‘package:dplyr’:
+
+    slice
+
+[1] "[Simulation setting]"
+[1] "m: 100"
+[1] "deltas: 0.5, 1, 2"
+[1] "r: 400"
+[1] "Sim.id 1"
+[1] "Data generated"
+[1] "   Split: 1"
+[1] "   Split: 2"
+[1] "Estimates and SE estimates computed"
+[1] ""
+[[1]]
+[[1]]$est
+  delta        mu      mu_1      mu_0         de         se_1        se_0
+1   0.5 0.4089030 0.2339934 0.5193867 -0.2853933 -0.008377959 -0.02858271
+2   1.0 0.3739625 0.2423713 0.5479694 -0.3055981  0.000000000  0.00000000
+3   2.0 0.3043043 0.2031715 0.5749146 -0.3717430 -0.039199807  0.02694515
+           oe         te
+1  0.03494054 -0.3139760
+2  0.00000000 -0.3055981
+3 -0.06965815 -0.3447979
+
+[[1]]$se
+  delta         mu       mu_1       mu_0         de       se_1       se_0
+1   0.5 0.05739530 0.04105301 0.08601912 0.07031318 0.03585202 0.07617195
+2   1.0 0.02365589 0.02186980 0.02954469 0.02599225 0.00000000 0.00000000
+3   2.0 0.03377597 0.03346283 0.04286697 0.03847086 0.02219353 0.03186199
+          oe         te
+1 0.05077151 0.04323040
+2 0.00000000 0.02599225
+3 0.02316989 0.03571759
+
+
+[1] "Total run time was 137.378 seconds"

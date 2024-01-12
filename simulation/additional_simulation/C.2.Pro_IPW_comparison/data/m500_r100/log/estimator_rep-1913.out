@@ -1,0 +1,106 @@
+WARNING: ignoring environment value of R_HOME
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: splines
+Loading required package: foreach
+Loaded gam 1.20.2
+
+Super Learner
+Version: 2.0-28
+Package created on 2021-05-04
+
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: Matrix
+Loaded glmnet 4.1-7
+Loading required package: Formula
+Loading required package: plotmo
+Loading required package: plotrix
+Loading required package: TeachingDemos
+Loaded gbm 2.1.8.1
+
+Attaching package: ‘xgboost’
+
+The following object is masked from ‘package:dplyr’:
+
+    slice
+
+[1] "[Simulation setting]"
+[1] "m: 500"
+[1] "deltas: 0.5, 1, 2"
+[1] "alphas: 0.4251, 0.5948, 0.7448"
+[1] "Sim.id 1"
+[1] "Data generated"
+[1] "Proposed & IPW estimators"
+[1] "   Split: 1"
+[1] "   Split: 2"
+[1] "Barkley estimators"
+[1] "I. Estimate GLMER model"
+boundary (singular) fit: see help('isSingular')
+[1] "IB. get MCFP vecs"
+[1] "II. Estimate CFBI"
+[1] "II. solving for alpha_num 1 of 3 ; alpha= 0.425133170705204"
+diagonal element is zero 
+[1] 1
+[1] "elapsed: 0.28 minutes as of 2023-05-08 21:31:48"
+[1] "II. solving for alpha_num 2 of 3 ; alpha= 0.594849404255532"
+diagonal element is zero 
+[1] 1
+[1] "elapsed: 0.26 minutes as of 2023-05-08 21:32:03"
+[1] "II. solving for alpha_num 3 of 3 ; alpha= 0.744822889124285"
+diagonal element is zero 
+[1] 1
+[1] "elapsed: 0.25 minutes as of 2023-05-08 21:32:18"
+[1] "III. Estimate MCFP"
+[1] "III. alpha num 1 of 3"
+[1] "elapsed: 0.11 minutes as of 2023-05-08 21:32:25"
+[1] "III. alpha num 2 of 3"
+[1] "elapsed: 0.22 minutes as of 2023-05-08 21:32:32"
+[1] "III. alpha num 3 of 3"
+[1] "elapsed: 0.34 minutes as of 2023-05-08 21:32:39"
+[1] "IV. Target estimates"
+[1] "Beginning variance calculations. This may take some time."
+[1] "V. Variance estimates"
+[1] ":model stuff:"
+[1] "elapsed: 0.47 minutes as of 2023-05-08 21:33:08"
+[1] ":CFBI EstFun:"
+[1] "elapsed: 0 minutes as of 2023-05-08 21:33:08"
+[1] ":CFBI alpha_num 1 of 3"
+[1] "elapsed: 0.78 minutes as of 2023-05-08 21:33:54"
+[1] ":CFBI alpha_num 2 of 3"
+[1] "elapsed: 1.56 minutes as of 2023-05-08 21:34:41"
+[1] ":CFBI alpha_num 3 of 3"
+[1] ":MCFP EstFun:"
+[1] "elapsed: 2.33 minutes as of 2023-05-08 21:35:27"
+[1] ":MCFP alpha_num 1 of 3"
+[1] "elapsed: 3.34 minutes as of 2023-05-08 21:36:28"
+[1] ":MCFP alpha_num 2 of 3"
+[1] "elapsed: 4.35 minutes as of 2023-05-08 21:37:29"
+[1] ":MCFP alpha_num 3 of 3"
+[1] "elapsed: 5.82 minutes as of 2023-05-08 21:38:29"
+[1] ":target ests:"
+[1] "elapsed: 0 minutes as of 2023-05-08 21:38:29"
+[1] "Var_row_num 1 of 9"
+Error in constructNuisanceABMats(AB_nuisance_list = AB_nuisance_list,  : 
+  only last entry can be NA
+Calls: <Anonymous> -> do.call -> <Anonymous> -> constructNuisanceABMats
+In addition: Warning messages:
+1: In stode(y, times, func, parms = parms, ...) :
+  error during factorisation of matrix (dgefa);         singular matrix
+2: In stode(y, times, func, parms = parms, ...) : steady-state not reached
+3: In stode(y, times, func, parms = parms, ...) :
+  error during factorisation of matrix (dgefa);         singular matrix
+4: In stode(y, times, func, parms = parms, ...) : steady-state not reached
+5: In stode(y, times, func, parms = parms, ...) :
+  error during factorisation of matrix (dgefa);         singular matrix
+6: In stode(y, times, func, parms = parms, ...) : steady-state not reached
+Execution halted
