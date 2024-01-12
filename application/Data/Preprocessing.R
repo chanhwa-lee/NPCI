@@ -4,7 +4,6 @@
 #**********           DHS data preprocessing                          **********
 #**********                                                           **********	
 #**********           Written by:				                              **********
-#**********           Chanhwa Lee - chanhwa@email.unc.edu             **********
 #**********                                                           **********
 #**********           Adapted from:                                   **********
 #**********           Chan Park(https://github.com/qkrcks0218/OptTrt) **********

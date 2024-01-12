@@ -5,7 +5,6 @@
 #**********           Park et al (2021). Only using year 2018 data    **********	
 #**********                                                           **********	
 #**********           Written by:				                              **********
-#**********           Chanhwa Lee - chanhwa@email.unc.edu             **********
 #**********                                                           **********
 #**********           Adapted from:                                   **********
 #**********           Chan Park(https://github.com/qkrcks0218/OptTrt) **********

@@ -4,7 +4,6 @@
 #**********           Estimation result under CIPS policy             **********
 #**********                                                           **********	
 #**********           Written by:				                              **********
-#**********           Chanhwa Lee - chanhwa@email.unc.edu             **********
 #**********                                                           **********
 #**********           Version: 2.0                                    **********
 #**********           Jan 12, 2024                                    **********
