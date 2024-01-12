@@ -89,27 +89,30 @@ Analysis on the effect of water, sanitation, and hygiene (WASH) facilities on di
   - Senegal: Continuous DHS, 2018 -> (download) SNKR81DT.ZIP -> (uncompress) SNKR81FL.DTA -> (rename) senegal18.DTA
   - Senegal: Continuous DHS, 2019 -> (download) SNKR8BDT.ZIP -> (uncompress) SNKR8BFL.DTA -> (rename) senegal19.DTA
 
-- :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
-- :page_facing_up: estimand.R: Causal estimands approximation
-- :page_facing_up: estimator.R: Proposed estimators computation
-- :page_facing_up: readresult.R: Read and summarize simulation result
-- :file_folder: estimand: Target causal estimands
-- :file_folder: data: Estimates of target causal estimands were stored.
+- :page_facing_up: Preprocessing.R: Preprocessing raw data files to generate HHData.Rdata and generate exploratory figures
 
 ### :file_folder: CIPS
 
-CIPS policy simulation code and results included in the main text
+CIPS policy application code and results
 
-- :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
-- :page_facing_up: estimand.R: Causal estimands approximation
 - :page_facing_up: estimator.R: Proposed estimators computation
-- :page_facing_up: readresult.R: Read and summarize simulation result
-- :file_folder: estimand: Target causal estimands
-- :file_folder: data: Estimates of target causal estimands were stored.
+- :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures
+- :file_folder: Rdata: Estimates of target causal estimands were stored.
+- :file_folder: D.4. Comparison with Park et al (2021): Comparison with
+  >- :page_facing_up: Preprocessing.R: Preprocessing raw data files to generate HHData.Rdata from "~/application/Data/senegal18.DTA"
+  >- :page_facing_up: estimator.R: Proposed estimators computation
+  >- :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures
+  >- :file_folder: Rdata: Estimates of target causal estimands were stored.
 
 ### :file_folder: TPB
 
-TPB policy simulation code and results included in the main text
+TPB policy application code and results
+
+- :page_facing_up: Estimator.R: Proposed estimators computation
+- :page_facing_up: Estimation.R: Script for parallelization
+- :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures
+- :file_folder: result: Estimates of target causal estimands were stored.
+
 
 - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
 - :page_facing_up: estimand.R: Causal estimands approximation
@@ -117,94 +120,7 @@ TPB policy simulation code and results included in the main text
 - :page_facing_up: readresult.R: Read and summarize simulation result
 - :page_facing_up: estimands.RDS: Target causal estimands
 - :file_folder: data: Estimates of target causal estimands were stored.
-  
-### :file_folder: additional_simulation
 
-Additional simulation code and results included in the supplementary material
-
-> #### :file_folder: C.1.sizevarydelta
-> CIPS with varying delta policy simulation code and results
-> - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
-> - :page_facing_up: estimand.R: Causal estimands approximation
-> - :page_facing_up: estimator.R: Proposed estimators computation
-> - :page_facing_up: readresult.R: Read and summarize simulation result
-> - :file_folder: estimand: Target causal estimands
-> - :file_folder: data: Estimates of target causal estimands were stored.
-
-> #### :file_folder: C.2.Pro_IPW_comparison
-> Proposed nonparametric estimator versus Barkley et al. (2021)'s IPW estimator comparison
-> - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
-> - :page_facing_up: compute_alpha.R: Compute alpha values in Barkley et al. (2022) corresponding to delta values in CIPS
-> - :page_facing_up: alphas.rds: Computed alpha values
-> - :page_facing_up: estimator.R: Proposed estimators computation
-> - :page_facing_up: readresult.R: Read and summarize simulation result
-> - :file_folder: data: Estimates of target causal estimands were stored.
-> - NOTE: estimands were not computed here and instead loaded from "~/simulation/CIPS/estimand"
-
-> #### :file_folder: C.3.r_comparison
-> Proposed estimator performance over r (subsampling approximation degree) values
-> - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
-> - :page_facing_up: estimator.R: Proposed estimators computation
-> - :page_facing_up: readresult.R: Read and summarize simulation result
-> - :file_folder: data: Estimates of target causal estimands were stored.
-> - NOTE: estimands were not computed here and instead loaded from "~/simulation/CIPS/estimand"
-
-> #### :file_folder: C.4.N_dist_comparison
-> Proposed estimator performance over various cluster sizes distributions
-> - :file_folder: N3, N3_5, N5, N5_10: Simulation results stored for various cluster sizes distributions. Structure is similar to "~/simulation/CIPS"
-> - :page_facing_up: readresult.R: Read and summarize simulation result
-
-
-
-
-
-
-### :file_folder: scenario_cor
-Simulation for Scenario 1: correctly specified nuisance functions
-
-> #### :file_folder: Code
-> - :page_facing_up: Estimand_Cor.R: Causal estimands approximation
-> - :page_facing_up: Estimator_Cor.R: Proposed esimators computation
-> - :page_facing_up: Helpfunc_Cor.R: R functions for estimand and estimator computation
-> - :page_facing_up: ReadResult_Cor.R: Read and summarize simulation result
-> 
-> #### :file_folder: Data_parallel
-> - Simulated data from parallel computing
-> 
-> #### :file_folder: Result_parallel
-> - Simulation result for Scenario 1
-
-### :file_folder: scenario_mis
-Simulation for mis-specified nuisance functions scenario
-
-> #### :file_folder: Code
-> - :page_facing_up: Estimand_Mis.R: Causal estimands approximation
-> - :page_facing_up: Estimator_Mis.R: Proposed esimators computation
-> - :page_facing_up: Helpfunc_Mis.R: R functions for estimand and estimator computation
-> - :page_facing_up: ReadResult_Mis.R: Read and summarize simulation result
-> 
-> #### :file_folder: Data_parallel
-> - Simulated data from parallel computing
-> 
-> #### :file_folder: Result_parallel
-> - Simulation result for Scenario 2
-
-### :page_facing_up: siumulation.xlsx
-Simulation results for both Scenarios organized
-
-
-## :file_folder: Data
-
-### Senegal DHS data [(ANSD and ICF, 2020)](https://www.dhsprogram.com/pubs/pdf/FR368/FR368.pdf)
-- Sociodemographic, enviromental, and health-related survey on household members 
-- Used to assess the effect of WASH facilities on diarrhea incidence among children, allowing for interference within census blocks
-- Download the data from [https://dhsprogram.com/data/available-datasets.cfm](https://dhsprogram.com/data/available-datasets.cfm) 
-(requires data request submission) and place the datasets in "Data/DHS/" by following procedure:
-  - Senegal: Continuous DHS, 2015 -> (download) SNKR7HDT.ZIP -> (uncompress) SNKR7HFL.DTA -> (rename) senegal15.DTA
-  - Senegal: Continuous DHS, 2016 -> (download) SNKR7IDT.ZIP -> (uncompress) SNKR7IFL.DTA -> (rename) senegal16.DTA
-  - Senegal: Continuous DHS, 2017 -> (download) SNKR7ZDT.ZIP -> (uncompress) SNKR7ZFL.DTA -> (rename) senegal17.DTA
-  - Senegal: Continuous DHS, 2018 -> (download) SNKR81DT.ZIP -> (uncompress) SNKR81FL.DTA -> (rename) senegal18.DTA
-  - Senegal: Continuous DHS, 2019 -> (download) SNKR8BDT.ZIP -> (uncompress) SNKR8BFL.DTA -> (rename) senegal19.DTA
 
 
 ## :file_folder: Code
@@ -229,11 +145,3 @@ Simulation results for both Scenarios organized
 - Generated figures are saved under "Data/DHS/".
 
 
-## Result
-
-![plot](Data/DHS/95CIs.jpg)
-
-- Household WASH facilities protect children from diarrhea, and the protective effects increase when neighboring households also have WASH facilities. 
-- Childrenin WASH households can gain additional protective effect as more neighboring households are equipped with WASH facilities, which is not true for children from households without WASH facilities. 
-- Therefore, it is important to install as many WASH facilities as possible
-to prevent diarrhea among children.
