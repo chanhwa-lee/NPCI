@@ -100,11 +100,11 @@ Analysis on the effect of water, sanitation, and hygiene (WASH) facilities on di
 - Used to assess the effect of WASH facilities on diarrhea incidence among children, allowing for interference within census blocks
 - Download the data from [https://dhsprogram.com/data/available-datasets.cfm](https://dhsprogram.com/data/available-datasets.cfm) 
 (requires data request submission) and place the datasets in `~/application/Data/` by following procedure:
-  - Senegal: Continuous DHS, 2015 -> (download) SNKR7HDT.ZIP -> (uncompress) SNKR7HFL.DTA -> (rename) senegal15.DTA
-  - Senegal: Continuous DHS, 2016 -> (download) SNKR7IDT.ZIP -> (uncompress) SNKR7IFL.DTA -> (rename) senegal16.DTA
-  - Senegal: Continuous DHS, 2017 -> (download) SNKR7ZDT.ZIP -> (uncompress) SNKR7ZFL.DTA -> (rename) senegal17.DTA
-  - Senegal: Continuous DHS, 2018 -> (download) SNKR81DT.ZIP -> (uncompress) SNKR81FL.DTA -> (rename) senegal18.DTA
-  - Senegal: Continuous DHS, 2019 -> (download) SNKR8BDT.ZIP -> (uncompress) SNKR8BFL.DTA -> (rename) senegal19.DTA
+  - Senegal: Continuous DHS, 2015 -> (download) `SNKR7HDT.ZIP` -> (uncompress) `SNKR7HFL.DTA` -> (rename) `senegal15.DTA`
+  - Senegal: Continuous DHS, 2016 -> (download) `SNKR7IDT.ZIP` -> (uncompress) `SNKR7IFL.DTA` -> (rename) `senegal16.DTA`
+  - Senegal: Continuous DHS, 2017 -> (download) `SNKR7ZDT.ZIP` -> (uncompress) `SNKR7ZFL.DTA` -> (rename) `senegal17.DTA`
+  - Senegal: Continuous DHS, 2018 -> (download) `SNKR81DT.ZIP` -> (uncompress) `SNKR81FL.DTA` -> (rename) `senegal18.DTA`
+  - Senegal: Continuous DHS, 2019 -> (download) `SNKR8BDT.ZIP` -> (uncompress) `SNKR8BFL.DTA` -> (rename) `senegal19.DTA`
 
 - :page_facing_up: `Preprocessing.R`: Preprocessing raw data files to generate HHData.Rdata and generate exploratory figures
 
@@ -115,7 +115,7 @@ CIPS policy application code and results
 - :page_facing_up: `estimator.R`: Proposed estimators computation
 - :page_facing_up: `Visualization.R`: Read and summarize simulation results to generate figures
 - :file_folder: `Rdata`: Estimates of target causal estimands were stored.
-- :file_folder: `D.4. Comparison with [Park et al (2021)](https://arxiv.org/abs/2111.09932v1)`: Comparison with
+- :file_folder: D.4. Comparison with [Park et al (2021)](https://arxiv.org/abs/2111.09932v1): Comparison with
   >- :page_facing_up: `Preprocessing.R`: Preprocessing raw data files to generate HHData.Rdata from `~/application/Data/senegal18.DTA`
   >- :page_facing_up: `estimator.R`: Proposed estimators computation
   >- :page_facing_up: `Visualization.R`: Read and summarize simulation results to generate figures
