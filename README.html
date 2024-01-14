@@ -182,7 +182,7 @@ pre code {
 </div>
 <div id="file_folder-simulation" class="section level2">
 <h2>:file_folder: simulation</h2>
-<p>For simulation, parallel computing at a high-performance computing cluster (Linux, bash) was conducted. R files are the main scripts, while bash files (.sh) are for performing parallel computing.</p>
+<p>R files are the main scripts, while bash files (.sh) are for submitting jobs to computing clusters.</p>
 <div id="file_folder-cips" class="section level3">
 <h3>:file_folder: CIPS</h3>
 <p>CIPS policy simulation code and results included in the main text</p>
@@ -192,7 +192,7 @@ pre code {
 <li>:page_facing_up: estimator.R: Proposed estimators computation</li>
 <li>:page_facing_up: readresult.R: Read and summarize simulation result</li>
 <li>:file_folder: estimand: Target causal estimands</li>
-<li>:file_folder: data: Estimates of target causal estimands were stored.</li>
+<li>:file_folder: data: Estimates of target causal estimands</li>
 </ul>
 </div>
 <div id="file_folder-tpb" class="section level3">
@@ -204,7 +204,7 @@ pre code {
 <li>:page_facing_up: estimator.R: Proposed estimators computation</li>
 <li>:page_facing_up: readresult.R: Read and summarize simulation result</li>
 <li>:page_facing_up: estimands.RDS: Target causal estimands</li>
-<li>:file_folder: data: Estimates of target causal estimands were stored.</li>
+<li>:file_folder: data: Estimates of target causal estimands</li>
 </ul>
 </div>
 <div id="file_folder-additional_simulation" class="section level3">
@@ -212,19 +212,19 @@ pre code {
 <p>Additional simulation code and results included in the supplementary material</p>
 <blockquote>
 <h4 id="file_folder-c.1.sizevarydelta">:file_folder: C.1.sizevarydelta</h4>
-<p>CIPS with varying delta policy simulation code and results - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation - :page_facing_up: estimand.R: Causal estimands approximation - :page_facing_up: estimator.R: Proposed estimators computation - :page_facing_up: readresult.R: Read and summarize simulation result - :file_folder: estimand: Target causal estimands - :file_folder: data: Estimates of target causal estimands were stored.</p>
+<p>CIPS with varying delta policy simulation code and results - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation - :page_facing_up: estimand.R: Causal estimands approximation - :page_facing_up: estimator.R: Proposed estimators computation - :page_facing_up: readresult.R: Read and summarize simulation result - :file_folder: estimand: Target causal estimands - :file_folder: data: Estimates of target causal estimands</p>
 </blockquote>
 <blockquote>
 <h4 id="file_folder-c.2.pro_ipw_comparison">:file_folder: C.2.Pro_IPW_comparison</h4>
-<p>Proposed nonparametric estimator versus <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-14/issue-3/Causal-inference-from-observational-studies-with-clustered-interference-with-application/10.1214/19-AOAS1314.full">Barkley et al. (2020)</a>’s IPW estimator comparison - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation - :page_facing_up: compute_alpha.R: Compute alpha values in Barkley et al. (2020) corresponding to delta values in CIPS - :page_facing_up: alphas.rds: Computed alpha values - :page_facing_up: estimator.R: Proposed estimators computation - :page_facing_up: readresult.R: Read and summarize simulation result - :file_folder: data: Estimates of target causal estimands were stored. - NOTE: estimands were not computed here and instead loaded from “~/simulation/CIPS/estimand”</p>
+<p>Proposed nonparametric estimator versus <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-14/issue-3/Causal-inference-from-observational-studies-with-clustered-interference-with-application/10.1214/19-AOAS1314.full">Barkley et al. (2020)</a>’s IPW estimator comparison - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation - :page_facing_up: compute_alpha.R: Compute alpha values in Barkley et al. (2020) corresponding to delta values in CIPS - :page_facing_up: alphas.rds: Computed alpha values - :page_facing_up: estimator.R: Proposed estimators computation - :page_facing_up: readresult.R: Read and summarize simulation result - :file_folder: data: Estimates of target causal estimands - NOTE: estimands were not computed here and instead loaded from <code>~/simulation/CIPS/estimand</code></p>
 </blockquote>
 <blockquote>
 <h4 id="file_folder-c.3.r_comparison">:file_folder: C.3.r_comparison</h4>
-<p>Proposed estimator performance over r (subsampling approximation degree) values - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation - :page_facing_up: estimator.R: Proposed estimators computation - :page_facing_up: readresult.R: Read and summarize simulation result - :file_folder: data: Estimates of target causal estimands were stored. - NOTE: estimands were not computed here and instead loaded from “~/simulation/CIPS/estimand”</p>
+<p>Proposed estimator performance over r (subsampling approximation degree) values - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation - :page_facing_up: estimator.R: Proposed estimators computation - :page_facing_up: readresult.R: Read and summarize simulation result - :file_folder: data: Estimates of target causal estimands - NOTE: estimands were not computed here and instead loaded from <code>~/simulation/CIPS/estimand</code></p>
 </blockquote>
 <blockquote>
 <h4 id="file_folder-c.4.n_dist_comparison">:file_folder: C.4.N_dist_comparison</h4>
-<p>Proposed estimator performance over various cluster sizes distributions - :file_folder: N3, N3_5, N5, N5_10: Simulation results stored for various cluster sizes distributions. Structure is similar to “~/simulation/CIPS” - :page_facing_up: readresult.R: Read and summarize simulation result</p>
+<p>Proposed estimator performance over various cluster sizes distributions - :file_folder: N3, N3_5, N5, N5_10: Simulation results stored for various cluster sizes distributions. Structure is similar to <code>~/simulation/CIPS</code> - :page_facing_up: readresult.R: Read and summarize simulation result</p>
 </blockquote>
 </div>
 </div>
@@ -238,7 +238,7 @@ pre code {
 <ul>
 <li>Sociodemographic, enviromental, and health-related survey on household members</li>
 <li>Used to assess the effect of WASH facilities on diarrhea incidence among children, allowing for interference within census blocks</li>
-<li>Download the data from <a href="https://dhsprogram.com/data/available-datasets.cfm">https://dhsprogram.com/data/available-datasets.cfm</a> (requires data request submission) and place the datasets in “~/application/Data/” by following procedure:
+<li>Download the data from <a href="https://dhsprogram.com/data/available-datasets.cfm">https://dhsprogram.com/data/available-datasets.cfm</a> (requires data request submission) and place the datasets in <code>~/application/Data/</code> by following procedure:
 <ul>
 <li>Senegal: Continuous DHS, 2015 -&gt; (download) SNKR7HDT.ZIP -&gt; (uncompress) SNKR7HFL.DTA -&gt; (rename) senegal15.DTA</li>
 <li>Senegal: Continuous DHS, 2016 -&gt; (download) SNKR7IDT.ZIP -&gt; (uncompress) SNKR7IFL.DTA -&gt; (rename) senegal16.DTA</li>
@@ -257,7 +257,7 @@ pre code {
 <li>:page_facing_up: estimator.R: Proposed estimators computation</li>
 <li>:page_facing_up: Visualization.R: Read and summarize simulation results to generate figures</li>
 <li>:file_folder: Rdata: Estimates of target causal estimands were stored.</li>
-<li>:file_folder: D.4. Comparison with <a href="https://arxiv.org/abs/2111.09932v1">Park et al (2021)</a>: Comparison with &gt;- :page_facing_up: Preprocessing.R: Preprocessing raw data files to generate HHData.Rdata from “~/application/Data/senegal18.DTA” &gt;- :page_facing_up: estimator.R: Proposed estimators computation &gt;- :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures &gt;- :file_folder: Rdata: Estimates of target causal estimands were stored.</li>
+<li>:file_folder: D.4. Comparison with <a href="https://arxiv.org/abs/2111.09932v1">Park et al (2021)</a>: Comparison with &gt;- :page_facing_up: Preprocessing.R: Preprocessing raw data files to generate HHData.Rdata from <code>~/application/Data/senegal18.DTA</code> &gt;- :page_facing_up: estimator.R: Proposed estimators computation &gt;- :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures &gt;- :file_folder: Rdata: Estimates of target causal estimands</li>
 </ul>
 </div>
 <div id="file_folder-tpb-1" class="section level3">
@@ -265,9 +265,9 @@ pre code {
 <p>TPB policy application code and results</p>
 <ul>
 <li>:page_facing_up: Estimator.R: Proposed estimators computation</li>
-<li>:page_facing_up: Estimation.R: Script for parallelization</li>
+<li>:page_facing_up: Estimation.R: Script for job submission to computing clusters</li>
 <li>:page_facing_up: Visualization.R: Read and summarize simulation results to generate figures</li>
-<li>:file_folder: result: Estimates of target causal estimands were stored.</li>
+<li>:file_folder: result: Estimates of target causal estimands</li>
 </ul>
 <hr />
 </div>
