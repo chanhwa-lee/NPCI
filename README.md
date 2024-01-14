@@ -55,35 +55,35 @@ Additional simulation code and results included in the supplementary material
 
 > #### :file_folder: C.1.sizevarydelta
 > CIPS with varying delta policy simulation code and results
-> - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
-> - :page_facing_up: estimand.R: Causal estimands approximation
-> - :page_facing_up: estimator.R: Proposed estimators computation
-> - :page_facing_up: readresult.R: Read and summarize simulation result
-> - :file_folder: estimand: Target causal estimands
-> - :file_folder: data: Estimates of target causal estimands
+> - :page_facing_up: `Helpfunc.R`: R functions for estimand and estimator computation
+> - :page_facing_up: `estimand.R`: Causal estimands approximation
+> - :page_facing_up: `estimator.R`: Proposed estimators computation
+> - :page_facing_up: `readresult.R`: Read and summarize simulation result
+> - :file_folder: `estimand`: Target causal estimands
+> - :file_folder: `data`: Estimates of target causal estimands
 
 > #### :file_folder: C.2.Pro_IPW_comparison
 > Proposed nonparametric estimator versus [Barkley et al. (2020)](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-14/issue-3/Causal-inference-from-observational-studies-with-clustered-interference-with-application/10.1214/19-AOAS1314.full)'s IPW estimator comparison
-> - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
-> - :page_facing_up: compute_alpha.R: Compute alpha values in Barkley et al. (2020) corresponding to delta values in CIPS
-> - :page_facing_up: alphas.rds: Computed alpha values
-> - :page_facing_up: estimator.R: Proposed estimators computation
-> - :page_facing_up: readresult.R: Read and summarize simulation result
-> - :file_folder: data: Estimates of target causal estimands 
+> - :page_facing_up: `Helpfunc.R`: R functions for estimand and estimator computation
+> - :page_facing_up: `compute_alpha.R`: Compute alpha values in Barkley et al. (2020) corresponding to delta values in CIPS
+> - :page_facing_up: `alphas.rds`: Computed alpha values
+> - :page_facing_up: `estimator.R`: Proposed estimators computation
+> - :page_facing_up: `readresult.R`: Read and summarize simulation result
+> - :file_folder: `data`: Estimates of target causal estimands 
 > - NOTE: estimands were not computed here and instead loaded from `~/simulation/CIPS/estimand`
 
 > #### :file_folder: C.3.r_comparison
 > Proposed estimator performance over r (subsampling approximation degree) values
-> - :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
-> - :page_facing_up: estimator.R: Proposed estimators computation
-> - :page_facing_up: readresult.R: Read and summarize simulation result
-> - :file_folder: data: Estimates of target causal estimands
+> - :page_facing_up: `Helpfunc.R`: R functions for estimand and estimator computation
+> - :page_facing_up: `estimator.R`: Proposed estimators computation
+> - :page_facing_up: `readresult.R`: Read and summarize simulation result
+> - :file_folder: `data`: Estimates of target causal estimands
 > - NOTE: estimands were not computed here and instead loaded from `~/simulation/CIPS/estimand`
 
 > #### :file_folder: C.4.N_dist_comparison
 > Proposed estimator performance over various cluster sizes distributions
-> - :file_folder: N3, N3_5, N5, N5_10: Simulation results stored for various cluster sizes distributions. Structure is similar to `~/simulation/CIPS`
-> - :page_facing_up: readresult.R: Read and summarize simulation result
+> - :file_folder: `N3`, `N3_5`, `N5`, `N5_10`: Simulation results stored for various cluster sizes distributions. Structure is similar to `~/simulation/CIPS`
+> - :page_facing_up: `readresult.R`: Read and summarize simulation result
 
 
 
@@ -106,29 +106,29 @@ Analysis on the effect of water, sanitation, and hygiene (WASH) facilities on di
   - Senegal: Continuous DHS, 2018 -> (download) SNKR81DT.ZIP -> (uncompress) SNKR81FL.DTA -> (rename) senegal18.DTA
   - Senegal: Continuous DHS, 2019 -> (download) SNKR8BDT.ZIP -> (uncompress) SNKR8BFL.DTA -> (rename) senegal19.DTA
 
-- :page_facing_up: Preprocessing.R: Preprocessing raw data files to generate HHData.Rdata and generate exploratory figures
+- :page_facing_up: `Preprocessing.R`: Preprocessing raw data files to generate HHData.Rdata and generate exploratory figures
 
 ### :file_folder: CIPS
 
 CIPS policy application code and results
 
-- :page_facing_up: estimator.R: Proposed estimators computation
-- :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures
-- :file_folder: Rdata: Estimates of target causal estimands were stored.
-- :file_folder: D.4. Comparison with [Park et al (2021)](https://arxiv.org/abs/2111.09932v1): Comparison with
-  >- :page_facing_up: Preprocessing.R: Preprocessing raw data files to generate HHData.Rdata from `~/application/Data/senegal18.DTA`
-  >- :page_facing_up: estimator.R: Proposed estimators computation
-  >- :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures
-  >- :file_folder: Rdata: Estimates of target causal estimands
+- :page_facing_up: `estimator.R`: Proposed estimators computation
+- :page_facing_up: `Visualization.R`: Read and summarize simulation results to generate figures
+- :file_folder: `Rdata`: Estimates of target causal estimands were stored.
+- :file_folder: `D.4. Comparison with [Park et al (2021)](https://arxiv.org/abs/2111.09932v1)`: Comparison with
+  >- :page_facing_up: `Preprocessing.R`: Preprocessing raw data files to generate HHData.Rdata from `~/application/Data/senegal18.DTA`
+  >- :page_facing_up: `estimator.R`: Proposed estimators computation
+  >- :page_facing_up: `Visualization.R`: Read and summarize simulation results to generate figures
+  >- :file_folder: `Rdata`: Estimates of target causal estimands
 
 ### :file_folder: TPB
 
 TPB policy application code and results
 
-- :page_facing_up: Estimator.R: Proposed estimators computation
-- :page_facing_up: Estimation.R: Script for job submission to computing clusters
-- :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures
-- :file_folder: result: Estimates of target causal estimands
+- :page_facing_up: `Estimator.R`: Proposed estimators computation
+- :page_facing_up: `Estimation.R`: Script for job submission to computing clusters
+- :page_facing_up: `Visualization.R`: Read and summarize simulation results to generate figures
+- :file_folder: `result`: Estimates of target causal estimands
 
 ***
 
