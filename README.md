@@ -115,7 +115,7 @@ CIPS policy application code and results
 - :page_facing_up: `estimator.R`: Proposed estimators computation
 - :page_facing_up: `Visualization.R`: Read and summarize simulation results to generate figures
 - :file_folder: `Rdata`: Estimates of target causal estimands were stored.
-- :file_folder: D.4. Comparison with [Park et al (2021)](https://arxiv.org/abs/2111.09932v1): Comparison with
+- :file_folder: D.4. Comparison with [Park et al (2021)](https://arxiv.org/abs/2111.09932v1)
   >- :page_facing_up: `Preprocessing.R`: Preprocessing raw data files to generate HHData.Rdata from `~/application/Data/senegal18.DTA`
   >- :page_facing_up: `estimator.R`: Proposed estimators computation
   >- :page_facing_up: `Visualization.R`: Read and summarize simulation results to generate figures
