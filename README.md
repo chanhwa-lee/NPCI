@@ -1,9 +1,27 @@
 # NPCI
-Repository for the paper "**Efficient Nonparametric Estimation of Stochastic Policy Effects with Clustered Interference**"
 
-- Developed nonparametric estimation of causal network effects under interference based on semiparametric efficiency theory and empirical process
-- Used ensemble of nonparametric and ML models (spline regression, GAM, boosting, Random Forest, neural net) via SuperLearnear in R
-- Assessed the effect of water, sanitation, and hygiene (WASH) facilities on diarrhea incidence among children, allowing for interference within census blocks
+- The code in this repository implements the nonparametric sample splitting estimators developed in the paper "**Efficient Nonparametric Estimation of Stochastic Policy Effects with Clustered Interference**"
+ 
+- The estimator utilizes ensemble estimator of the nuisance functions via SuperLearner in R
+
+## Summary
+
+The GitHub repository comprises two folders: `~/simulation` and `~/application`, which store reproducible codes for all computational work in the manuscript.
+
+In the `~/simulation` folder, reproducible codes for simulation results in the main text and the supplementary materials are stored. Running the shell scripts `~/simulation/CIPS/estimand_main.sh` and `~/simulation/CIPS/estimator_main.sh` computes causal estimands under the CIPS policy and their proposed estimates. The main code implementing the proposed method is found in the `estimand.R`, `estimator.R`, and `Helpfunc.R` files in the same directory. The simulation results are summarized by `readresult.R`. The simulation study for the TPB policy is done similarly, and the codes and results are in `~/simulation/TPB`. Additional simulation code and results in supplementary materials are available in `~/simulation/additional_simulation`.
+
+In the `~/application` folder, code for real data analysis is stored. 
+Senegal Demographic Health Survey (DHS) provides sociodemographic, enviromental, and health-related information on household members. 
+In the survey, households were randomly sampled from census blocks. 
+The survey data was used to assess the effect of water, sanitation, and hygiene (WASH) facilities on diarrhea incidence among children in Senegal.
+Senegal DHS WASH data is publicly available upon request at [https://dhsprogram.com/data/available-datasets.cfm](https://dhsprogram.com/data/available-datasets.cfm).
+Place the Senegal DHS WASH data (described below) at `~/application/Data`, 
+and run `~/application/Data/Preprocessing.R` to get cleaned data for the analysis. 
+Run the `~/application/CIPS/estimator_main.sh` shell scripts to get estimates of Senegal DHS WASH causal estimands under the CIPS policy. The main code is in `estimator.R` in the same directory. The estimation results are summarized and visualized by `Visualization.R`. Estimation results for the TPB policy are done similarly, and the codes and results are in `~/application/TPB`.
+
+***
+
+## File Description
 
 ## :file_folder: simulation
 
@@ -112,6 +130,8 @@ TPB policy application code and results
 - :page_facing_up: Estimation.R: Script for parallelization
 - :page_facing_up: Visualization.R: Read and summarize simulation results to generate figures
 - :file_folder: result: Estimates of target causal estimands were stored.
+
+***
 
 ## References
 - [Barkley, B. G., Hudgens, M. G., Clemens, J. D., Ali, M. & Emch, M. E. (2020), ‘Causal
