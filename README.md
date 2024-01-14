@@ -31,23 +31,23 @@ R files are the main scripts, while bash files (.sh) are for submitting jobs to 
 
 CIPS policy simulation code and results included in the main text
 
-- :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
-- :page_facing_up: estimand.R: Causal estimands approximation
-- :page_facing_up: estimator.R: Proposed estimators computation
-- :page_facing_up: readresult.R: Read and summarize simulation result
-- :file_folder: estimand: Target causal estimands
-- :file_folder: data: Estimates of target causal estimands
+- :page_facing_up: `Helpfunc.R`: R functions for estimand and estimator computation
+- :page_facing_up: `estimand.R`: Causal estimands approximation
+- :page_facing_up: `estimator.R`: Proposed estimators computation
+- :page_facing_up: `readresult.R`: Read and summarize simulation result
+- :file_folder: `estimand`: Target causal estimands
+- :file_folder: `data`: Estimates of target causal estimands
 
 ### :file_folder: TPB
 
 TPB policy simulation code and results included in the main text
 
-- :page_facing_up: Helpfunc.R: R functions for estimand and estimator computation
-- :page_facing_up: estimand.R: Causal estimands approximation
-- :page_facing_up: estimator.R: Proposed estimators computation
-- :page_facing_up: readresult.R: Read and summarize simulation result
-- :page_facing_up: estimands.RDS: Target causal estimands
-- :file_folder: data: Estimates of target causal estimands
+- :page_facing_up: `Helpfunc.R`: R functions for estimand and estimator computation
+- :page_facing_up: `estimand.R`: Causal estimands approximation
+- :page_facing_up: `estimator.R`: Proposed estimators computation
+- :page_facing_up: `readresult.R`: Read and summarize simulation result
+- :page_facing_up: `estimands.RDS`: Target causal estimands
+- :file_folder: `data`: Estimates of target causal estimands
   
 ### :file_folder: additional_simulation
 
