@@ -14,7 +14,8 @@
 
 ############################################
 # By running this R file, the DHS dataset is cleaned.
-# Preprocessed dataset is saved as "Data/DHS/HHData.Rdata"and used in "Code/Estimation.R".
+# Preprocessed dataset is saved as "application/Data/HHData.Rdata"
+# and used in "application/CIPS" and "application/TPB".
 ############################################
 
 ##########################################
@@ -24,7 +25,7 @@
 # Senegal: Continuous DHS, 2017 -> (download) SNKR7ZDT.ZIP -> (uncompress) SNKR7ZFL.DTA -> (rename) senegal17.DTA
 # Senegal: Continuous DHS, 2018 -> (download) SNKR81DT.ZIP -> (uncompress) SNKR81FL.DTA -> (rename) senegal18.DTA
 # Senegal: Continuous DHS, 2019 -> (download) SNKR8BDT.ZIP -> (uncompress) SNKR8BFL.DTA -> (rename) senegal19.DTA
-# Place the datasets in "Data/DHS/"
+# Place the datasets in "application/Data/"
 ##########################################
 
 ### Libraries ###

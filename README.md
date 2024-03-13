@@ -98,15 +98,34 @@ Analysis on the effect of water, sanitation, and hygiene (WASH) facilities on di
 #### Senegal DHS data [(ANSD and ICF, 2020)](https://www.dhsprogram.com/pubs/pdf/FR368/FR368.pdf)
 - Sociodemographic, enviromental, and health-related survey on household members 
 - Used to assess the effect of WASH facilities on diarrhea incidence among children, allowing for interference within census blocks
-- Download the data from [https://dhsprogram.com/data/available-datasets.cfm](https://dhsprogram.com/data/available-datasets.cfm) 
-(requires data request submission) and place the datasets in `~/application/Data/` by following procedure:
-  - Senegal: Continuous DHS, 2015 -> (download) `SNKR7HDT.ZIP` -> (uncompress) `SNKR7HFL.DTA` -> (rename) `senegal15.DTA`
-  - Senegal: Continuous DHS, 2016 -> (download) `SNKR7IDT.ZIP` -> (uncompress) `SNKR7IFL.DTA` -> (rename) `senegal16.DTA`
-  - Senegal: Continuous DHS, 2017 -> (download) `SNKR7ZDT.ZIP` -> (uncompress) `SNKR7ZFL.DTA` -> (rename) `senegal17.DTA`
-  - Senegal: Continuous DHS, 2018 -> (download) `SNKR81DT.ZIP` -> (uncompress) `SNKR81FL.DTA` -> (rename) `senegal18.DTA`
-  - Senegal: Continuous DHS, 2019 -> (download) `SNKR8BDT.ZIP` -> (uncompress) `SNKR8BFL.DTA` -> (rename) `senegal19.DTA`
+- The data can be downloaded from the Demographic and Health Surveys Program website [https://dhsprogram.com](https://dhsprogram.com) after submitting a data request for research purposes. 
+The process is as follows:
 
-- :page_facing_up: `Preprocessing.R`: Preprocessing raw data files to generate HHData.Rdata and generate exploratory figures
+- **Register**
+First, register for an account at the following link: [https://dhsprogram.com/data/new-user-registration.cfm](https://dhsprogram.com/data/new-user-registration.cfm). 
+Fill in user information and select "Sub-Saharan Africa" from the drop-down menu under "Select Region". 
+Then, click on the "Survey" checkbox for "Senegal" and submit the dataset request.
+
+- **Download dataset**
+Upon approval of your account registration, log in to the website at [https://dhsprogram.com/data/dataset_admin/login_main.cfm](https://dhsprogram.com/data/dataset_admin/login_main.cfm).
+Select your project, then click on the "Download by Single Survey" link and select the country: "Senegal". 
+Click on the "Download" link under the "Survey Datasets" column for "Country/Year: Senegal 2015" and "Type: Continuous DHS" row. 
+Download "SNKR7HDT.ZIP" (Stata dataset) under the "Household Recode" tab. 
+Uncompress the downloaded .ZIP folder. 
+Rename "SNKR7HFL.DTA" to "senegal15.DTA". 
+In the same folder, the .MAP file is the data dictionary.
+
+- For other years (2016 - 2019), repeat the process according to the following steps:
+
+  >- Senegal: Continuous DHS, 2015 -> (download) `SNKR7HDT.ZIP` -> (uncompress) `SNKR7HFL.DTA` -> (rename) `senegal15.DTA`
+  >- Senegal: Continuous DHS, 2016 -> (download) `SNKR7IDT.ZIP` -> (uncompress) `SNKR7IFL.DTA` -> (rename) `senegal16.DTA`
+  >- Senegal: Continuous DHS, 2017 -> (download) `SNKR7ZDT.ZIP` -> (uncompress) `SNKR7ZFL.DTA` -> (rename) `senegal17.DTA`
+  >- Senegal: Continuous DHS, 2018 -> (download) `SNKR81DT.ZIP` -> (uncompress) `SNKR81FL.DTA` -> (rename) `senegal18.DTA`
+  >- Senegal: Continuous DHS, 2019 -> (download) `SNKR8BDT.ZIP` -> (uncompress) `SNKR8BFL.DTA` -> (rename) `senegal19.DTA`
+
+- Place the datasets in `~/application/Data/`
+
+- :page_facing_up: `Preprocessing.R`: Preprocessing raw data files to generate `HHData.Rdata` and generate exploratory figures
 
 ### :file_folder: CIPS
 
