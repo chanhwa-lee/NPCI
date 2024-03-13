@@ -1,6 +1,5 @@
 setwd("~/research/NPCI/simulation/TPB")
-suppressPackageStartupMessages(require(optparse))
-suppressPackageStartupMessages(require(dplyr))
+library(dplyr)
 
 rhos = c(0.3, 0.45, 0.6)
 rho0 = 0.45
@@ -120,5 +119,5 @@ result.table = data.frame(lapply(result.table,
 
 result.table
 
-write.csv(result.table, file = "TPB.pro.result.table.m500.r100.D1000.csv")
+write.csv(result.table, file = "Tab2.TPB.pro.result.table.m500.r100.D1000.csv")
 

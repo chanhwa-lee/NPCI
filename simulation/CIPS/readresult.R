@@ -1,7 +1,5 @@
 setwd("~/research/NPCI/simulation/CIPS")
-
-suppressPackageStartupMessages(require(optparse))
-suppressPackageStartupMessages(require(dplyr))
+library(dplyr)
 
 ###------ Read estimand ------###
 file.list <- list.files("estimand", pattern = "estimand.*rds")
@@ -113,7 +111,7 @@ result.table$RMSERatio = result.table[,5]/result.table[,10]
 result.table = data.frame(lapply(result.table,
                   function(col) if(is.numeric(col)) round(col, 3) else col))
 
-write.csv(result.table, file = "CIPS.pro.result.table.m500.r100.D1000.csv")
+write.csv(result.table, file = "Tab1.CIPS.pro.result.table.m500.r100.D1000.csv")
 
 
 

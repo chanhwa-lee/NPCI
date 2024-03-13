@@ -21,6 +21,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(cowplot)
+library(tibble)
 
 ###------ Read estimator ------###
 result.list <- list.files("./Rdata", pattern = "estimate.*rds", full.names = T)
@@ -129,7 +130,7 @@ plot_grid(
   ,
   nrow = 2)
 
-ggsave("95CIs_CIPS_2x4.pdf", width = 10, height = 6)
+ggsave("Fig1.95CIs_CIPS_2x4.pdf", width = 10, height = 6)
 
 
 
@@ -164,7 +165,7 @@ ggplot(nuis.mean.data, aes(x = library, y = value)) +
   facet_wrap(~ type, scales = "free", labeller = label_parsed) +
   labs(x = "Library", y = "Weight")
 
-ggsave("D.2.SLWeightCIPS.pdf", width = 8, height = 4)
+ggsave("FigS6.SLWeightCIPS.pdf", width = 8, height = 4)
 
 
 ###---- D.3. Choice of S ----###
@@ -245,6 +246,6 @@ plot_grid(
 nrow = 1,
 rel_widths = c(1,1,1,.3))
 
-ggsave("D.3.ScompCIPS.pdf", width = 8, height = 4)
+ggsave("FigS7.ScompCIPS.pdf", width = 8, height = 4)
 
 

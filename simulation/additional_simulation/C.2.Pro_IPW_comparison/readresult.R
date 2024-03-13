@@ -1,7 +1,5 @@
 setwd("~/research/NPCI/simulation/additional_simulation/C.2.Pro_IPW_comparison")
-
-suppressPackageStartupMessages(require(optparse))
-suppressPackageStartupMessages(require(dplyr))
+library(dplyr)
 
 ###------ Read estimand ------###
 file.list <- list.files("../../CIPS/estimand/", pattern = "estimand.*rds", full.names = T)
@@ -164,4 +162,4 @@ ggplot(data = data.plot.2 %>%
                     labels = c("pro.np" = "NSS",
                                "bar.p"  = "IPW"))
 
-ggsave(filename = "CIPS.Pro.Bar.comparison.m500.r100.D1000.pdf", width = 8, height = 5)
+ggsave(filename = "FigS1.CIPS.Pro.Bar.comparison.m500.r100.D1000.pdf", width = 8, height = 5)

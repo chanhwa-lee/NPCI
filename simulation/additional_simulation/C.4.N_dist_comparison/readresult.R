@@ -133,4 +133,4 @@ ggplot(data = data.plot.2 %>%
                                  "N5"    = TeX("N $\\equiv$ 5"),
                                  "N5_10" = TeX("N $\\in$\\{5,$\\cdots$,10\\}")))
 
-ggsave(filename = "N_distn.comparison.m100.r100.D1000.pdf", width = 8, height = 5)
+ggsave(filename = "FigS3.N_distn.comparison.m100.r100.D1000.pdf", width = 8, height = 5)

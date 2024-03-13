@@ -122,4 +122,4 @@ ggplot(data = data.plot.2 %>%
   theme(axis.title.x = element_blank(),
         axis.title.y = element_blank())
 
-ggsave(filename = "r.comparison.m100.D1000.pdf", width = 8, height = 5)
+ggsave(filename = "FigS2.r.comparison.m100.D1000.pdf", width = 8, height = 5)

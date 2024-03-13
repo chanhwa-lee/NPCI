@@ -197,7 +197,7 @@ ggplot(data = data, aes(x = category, y = value)) +
   lims(y = c(0, max(data$value)+20)) + 
   theme_classic()
 
-ggsave("SenegalDHS_Ndist.pdf", width = 8, height = 4)
+ggsave("FigS4.SenegalDHS_Ndist.pdf", width = 8, height = 4)
 
 
 
@@ -237,7 +237,7 @@ ggplot(result_long, aes(x = variable, y = value)) +
         legend.position = "none",
         axis.text.x = element_blank())
 
-ggsave("SenegalDHS_coldist.pdf", width = 8, height = 4)
+ggsave("FigS5.SenegalDHS_coldist.pdf", width = 8, height = 4)
 
 ### Save preprocessed dataset ###
 save(HH.Data, file = "HHData.Rdata")

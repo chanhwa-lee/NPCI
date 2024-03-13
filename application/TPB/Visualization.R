@@ -15,6 +15,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(cowplot)
+library(tibble)
 
 ###------ Read estimator ------###
 result.list <- list.files("./result", pattern = "estimate.*rds", full.names = T)
@@ -121,7 +122,7 @@ plot_grid(
     nrow = 1),
   nrow = 2)
 
-ggsave("95CIs_TPB_2x4.pdf", width = 10, height = 6)
+ggsave("Fig2.95CIs_TPB_2x4.pdf", width = 10, height = 6)
 
 
 
@@ -205,4 +206,4 @@ plot_grid(
   nrow = 1,
   rel_widths = c(1,1,1,.3))
 
-ggsave("D.3.ScompTPB.pdf", width = 8, height = 4)
+ggsave("FigS8.ScompTPB.pdf", width = 8, height = 4)

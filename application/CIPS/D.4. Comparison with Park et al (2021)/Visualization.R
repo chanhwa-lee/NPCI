@@ -18,7 +18,7 @@
 ##########################################
 
 
-setwd("~/research/NPCI/application/D.4. Comparison with Park et al (2021)")
+setwd("~/research/NPCI/application/CIPS/D.4. Comparison with Park et al (2021)")
 
 library(dplyr)
 library(tidyr)
@@ -91,4 +91,4 @@ ggplot(data = est_comb %>% filter(pi >= 0.39), aes(x = pi, y = mu, group = type,
   scale_color_discrete(labels = c("CIPS", "Park et al")) +
   theme(legend.position = c(0.85, 0.2))
 
-ggsave("D.4.CIPSvsOMAR.pdf", height = 3, width = 5)
+ggsave("FigS9.CIPSvsOMAR.pdf", height = 3, width = 5)

@@ -113,4 +113,4 @@ result.table = data.frame(lapply(result.table,
 
 result.table
 
-write.csv(result.table, file = "CIPS.sizevary.pro.result.table.m500.r100.D1000.csv")
+write.csv(result.table, file = "TabS2.CIPS.sizevary.pro.result.table.m500.r100.D1000.csv")
